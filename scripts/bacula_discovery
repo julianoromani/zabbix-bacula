@@ -40,6 +40,6 @@ generate_zabbix_json()
 }
 
 ## EXECUTION
-generate_zabbix_json $(echo "show job"|bconsole|grep Job:|while read LINE;do getjob_names $LINE;done)
+generate_zabbix_json $(echo "show job"|bconsole|grep ^Job:|grep -v RestoreFiles|while read LINE;do getjob_names $LINE;done)
 cat $file
 rm -f $file

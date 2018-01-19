@@ -26,4 +26,4 @@ installation
 contributors
 =====
 * Fábio Miguel Mello (me)
-
+* Juliano Romani
